@@ -88,3 +88,8 @@ subdirectory of the module.
 - Sourcemaps are made so JS can be debugged relative to their file names using the source tab of Chrome dev tools
 - Bootstrap and custom styles are compiled with less into style.css
 - Images are optimized with imagemin
+
+## Great Resources
+GruntJS Course: http://frontendmasters.com/ - David Mosher
+AngularJS Course: http://frontendmasters.com/ - Lukas Ruebbelke
+AngularJS Videos: https://egghead.io/
