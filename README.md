@@ -5,7 +5,7 @@ This project was inspired by best practices research based on reports
 by those who've been in the trenches with AngularJS, then implemented
 with my own opinion based on team development, maintainability, and integration.
 
-h2. Setup
+## Setup
 ```
 git clone git@github.com:mikemilano/modular-ng.git
 cd modular-ng/
@@ -13,7 +13,7 @@ bower install
 npm install
 ```
 
-h2. Run
+## Run
 This will build the project, run it in a server, and load it in your browser.
 
 If you have the live reload chrome plugin enabled, it will reload when you save a file.
@@ -21,19 +21,19 @@ If you have the live reload chrome plugin enabled, it will reload when you save 
 grunt
 ```
 
-h2. Build dist
+## Build dist
 This will build the project, including minifying the code.
 ```
 SERVER_BASE=dist grunt build
 ```
 
-h2. Testing
+## Testing
 ```
 cd test/
 protractor protractor.conf.js
 ```
 
-h2. Modules
+## Modules
 
 The idea behind modules is to organize routes, controllers,
 services, directives, partials, and tests of a similar context, into
@@ -47,7 +47,7 @@ etc... or you may break logic out into multiple files. i.e. `<module name>.contr
 - Partials: These may be placed directly in the module directory or in a
 subdirectory of the module.
 
-h2. Grunt Tasks
+## Grunt Tasks
 - JS files is run trough jshint, then concatenated into app.min.js
 - AngularJS templates are transformed into JS in templates.js
 - Sourcemaps are made so JS can be debugged relative to their file names using the source tab of Chrome dev tools
