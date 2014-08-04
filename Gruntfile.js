@@ -16,12 +16,16 @@ module.exports = function(grunt) {
           'bower_components/angular/angular.js',
           'bower_components/angular-route/angular-route.js',
           'bower_components/lodash/dist/lodash.js',
-          'bower_components/angular-bootstrap/ui-bootstrap.js'
+          'bower_components/angular-bootstrap/ui-bootstrap.js',
+          'bower_components/ngAutocomplete/src/ngAutocomplete.js'
         ],
         src: [
           'src/js/modules/*/*.js',
           'src/js/app.js'
         ]
+      },
+      templates: {
+        src: 'src/js/**/*.html'
       },
       less: {
         src: [
@@ -69,7 +73,7 @@ module.exports = function(grunt) {
       }
     },
     ngtemplates: {
-      app:          {
+      app: {
         cwd: 'src',
         src: 'js/**/*.html',
         dest: dist + '/js/templates.js',
@@ -104,6 +108,10 @@ module.exports = function(grunt) {
       js: {
         files: ['<%= files.js.src %>'],
         tasks: ['concat']
+      },
+      templates: {
+        files: ['<%= files.templates.src %>'],
+        tasks: ['ngtemplates']
       },
       less: {
         files: ['<%= files.less.src %>'],
