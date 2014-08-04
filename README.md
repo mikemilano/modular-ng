@@ -61,6 +61,8 @@ bower install lodash --save
 Then, add the path to the dependency in `files.js.vendor.src` array of `Gruntfile.js`.
 
 ## Testing
+By default, the protractor config is setup to look for all tests defined in `tests/e2e`,
+as well as tests defined in modules.
 ```
 cd test/
 protractor protractor.conf.js
