@@ -9,7 +9,6 @@ with my own opinion based on team development, maintainability, and integration.
 ```
 git clone git@github.com:mikemilano/modular-ng.git
 cd modular-ng/
-bower install
 npm install
 ```
 
@@ -41,7 +40,7 @@ their own directory.
 
 The naming conventions for files are as follows:
 
-- Module directory: Use the module name
+- Module directory: Use the module name. i.e. `src/modules/notes`
 - Module file(s): `<module name>.js` may contain routes, controllers, services,
 etc... or you may break logic out into multiple files. i.e. `<module name>.controllers.js`.
 - Partials: These may be placed directly in the module directory or in a
