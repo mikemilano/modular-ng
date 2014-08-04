@@ -19,7 +19,7 @@ common context are organized within the same directory.
             ├── main.js
             └── test
                 └── e2e
-                    └── main.spec.j
+                    └── main.spec.js
 ```
 
 Grunt does a lot of work to build that into something like this:
