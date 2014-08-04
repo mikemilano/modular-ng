@@ -5,6 +5,33 @@ This project was inspired by best practices research based on reports
 by those who've been in the trenches with AngularJS, then implemented
 with my own opinion based on team development, maintainability, and integration.
 
+The idea is that routes, controllers, directives, tests, templates etc... of a
+common context are organized within the same directory.
+
+```
+.
+├── index.html
+└── js
+    ├── app.js
+    └── modules
+        └── main
+            ├── main.html
+            ├── main.js
+            └── test
+                └── e2e
+                    └── main.spec.j
+```
+
+Grunt does a lot of work to build that into something like this:
+```
+.
+├── index.html
+└── js
+    ├── app.min.js
+    └── templates.js
+```
+
+
 ## Setup
 ```
 git clone git@github.com:mikemilano/modular-ng.git
@@ -25,6 +52,13 @@ This will build the project, including minifying the code.
 ```
 SERVER_BASE=dist grunt build
 ```
+
+## Add dependencies
+Install a dependency with bower:
+```
+bower install lodash --save
+```
+Then, add the path to the dependency in `files.js.vendor.src` array of `Gruntfile.js`.
 
 ## Testing
 ```
