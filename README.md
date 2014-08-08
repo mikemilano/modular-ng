@@ -93,4 +93,4 @@ subdirectory of the module.
 - Advanced Design Patterns and Best Practices: http://trochette.github.io/Angular-Design-Patterns-Best-Practices/ - Tommy Rochette
 - GruntJS Course: http://frontendmasters.com/ - David Mosher
 - AngularJS Course: http://frontendmasters.com/ - Lukas Ruebbelke
-- AngularJS Videos: https://egghead.io/
+- AngularJS Videos: https://egghead.io/ - John Lindquist
